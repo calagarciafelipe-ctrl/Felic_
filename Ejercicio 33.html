@@ -1,3 +1,19 @@
 <script>
-    
+if (true) {
+    var nombre = "Julian";
+    let edad = 18;
+
+    console.log("Dentro del bloque:");
+    console.log(nombre); // Julián
+    console.log(edad);   // 18
+}
+
+console.log("Fuera del bloque:");
+console.log(nombre); // Julián
+
+try {
+    console.log(18);
+} catch (error) {
+    console.log("Error: 'edad' no está disponible fuera del bloque.");
+}
 </script>
