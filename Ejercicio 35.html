@@ -1,28 +1,3 @@
 <script>
-    function crearCuenta() {
-    let saldo = 0;
-
-    return {
-        depositar(monto) {
-            saldo += monto;
-            console.log("Saldo actual: $" + saldo);
-        },
-
-        retirar(monto) {
-            if (monto <= saldo) {
-                saldo -= monto;
-                console.log("Saldo actual: $" + saldo);
-            } else {
-                console.log("Fondos insuficientes.");
-            }
-        }
-    };
-}
-
-const cuenta = crearCuenta();
-
-cuenta.depositar(1000);
-cuenta.depositar(500);
-cuenta.retirar(300);
-cuenta.retirar(1500);
+    
 </script>
